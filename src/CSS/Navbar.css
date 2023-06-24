@@ -1,0 +1,27 @@
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background: #FFF;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+#midNav{
+    display: flex;
+    justify-content: space-around;
+    /* width: 50%; */
+    color: #6938EF;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.midNavLink{
+    display: flex;
+    /* width: 200px; */
+    align-items: center;
+}
+
+.midNavLink >p {
+    padding-left: 10px;
+    padding-right: 40px;
+}

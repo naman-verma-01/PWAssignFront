@@ -1,0 +1,86 @@
+#pageCom {
+    height: 100%;
+    margin: 1rem;
+    border-radius: 10px;
+    background: #FFF;
+    padding: 20px;
+}
+
+.pageHighlight {
+    display: flex;
+    color: #000;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 14px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 20px;
+}
+
+.pageHighlight img {
+    height: 30px;
+}
+
+.pageHighlightSection {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* align-content: center; */
+    /* flex-wrap: wrap; */
+    /* width: 100%; */
+}
+
+#pageHighlightContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pageHighlight>div>p:nth-child(1) {
+    font-weight: bolder;
+}
+
+
+#pagePositionName {
+    color: #000;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: bolder;
+}
+
+#pageCompName {
+    color: #667085;
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+
+#pageSkillSection {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 45%;
+    /* justify-content: space-between; */
+}
+
+.pageSkill {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 25px;
+    border-radius: 20px;
+    background: #F2F4F7;
+    padding: 10px;
+    font-size: 10px;
+    font-family: Poppins;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.content{
+    font-size: 12px;
+    margin: 20px;
+}
