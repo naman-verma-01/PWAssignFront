@@ -1,0 +1,135 @@
+.card {
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: #FFF;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.10);
+    min-height: 100px;
+    margin: 10px;
+}
+
+.card:hover{
+    outline: 1px solid #6938EF;
+    /* box-shadow: 0 0 3px 1px #6938EF; */
+}
+
+
+.cardHeading {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.cardHeading p:nth-child(1) {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.cardHeading p:nth-child(2) {
+    color: #667085;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.bookmark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: #FFF;
+    margin: 8px;
+}
+
+.cardSkillSection {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cardSkillSection img{
+    margin-left: 10px;
+}
+
+
+.cardSkills {
+    display: flex;
+    /* justify-content: space-between; */
+    width: 60%;
+    /* padding-left: 10px; */
+    /* border: 1px solid rgba(0, 0, 0, 0.15); */
+    /* background: #F2F4F7; */
+}
+
+.cardSkills p {
+    padding-left: 7px;
+    padding-right: 7px;
+    color: #000;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+
+
+.cardSkills p:nth-child(1) {
+    border-radius: 20px 0px 0px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: #F2F4F7;
+}
+
+.cardSkills p:nth-child(4) {
+    border-radius: 0px 20px 20px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: #F2F4F7;
+}
+
+.cardSkills p:nth-child(2) {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: #F2F4F7;
+}
+
+.cardSkills p:nth-child(3) {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: #F2F4F7;
+}
+
+
+
+.cardHighlight {
+    display: flex;
+    color: #000;
+    font-size: 12px;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 14px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.cardHighlight img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.cardHighlightSection {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* align-content: center; */
+    /* flex-wrap: wrap; */
+    /* width: 100%; */
+}
+
+#cardHighlightContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardHighlight>div>p:nth-child(1) {
+    font-weight: bolder;
+}
+

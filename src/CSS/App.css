@@ -20,6 +20,12 @@ body{
 
 #cardSection{
     flex: 1;
+    height: 80vh;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar{
+    width: 0;
 }
 
 #cardSection div{

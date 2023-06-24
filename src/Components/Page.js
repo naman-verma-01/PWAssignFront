@@ -16,7 +16,7 @@ function Page(props) {
                         </div>
                     </div>
                     <div className='pageHighlight'>
-                        <img h src='./images/timer.jpg' />
+                        <img h src='./images/calendar.jpg' />
                         <div>
                             <p>{props.data.postedOn} Days Ago</p>
                             <p>Posted</p>
@@ -26,14 +26,14 @@ function Page(props) {
 
                 <div className='pageHighlightSection'>
                     <div className='pageHighlight'>
-                        <img h src='./images/timer.jpg' />
+                        <img h src='./images/rank.jpg' />
                         <div>
                             <p>{props.data.experience} months</p>
                             <p>Experience</p>
                         </div>
                     </div>
                     <div className='pageHighlight'>
-                        <img h src='./images/timer.jpg' />
+                        <img h src='./images/calendarStar.jpg' />
                         <div>
                             <p>{props.data.endsIn} Days</p>
                             <p>Ends In</p>
@@ -43,14 +43,14 @@ function Page(props) {
 
                 <div className='pageHighlightSection'>
                     <div className='pageHighlight'>
-                        <img h src='./images/timer.jpg' />
+                        <img h src='./images/wallet.jpg' />
                         <div>
-                            <p> $ {props.data.stipend}</p>
+                            <p> ${props.data.stipend}</p>
                             <p>Stipend</p>
                         </div>
                     </div>
                     <div className='pageHighlight'>
-                        <img h src='./images/timer.jpg' />
+                        <img h src='./images/person.jpg' />
                         <div>
                             <p>{props.data.numberOfPositions}</p>
                             <p>Open Positions</p>
@@ -60,14 +60,14 @@ function Page(props) {
 
                 <div className='pageHighlightSection'>
                     <div className='pageHighlight'>
-                        <img h src='./images/timer.jpg' />
+                        <img h src='./images/ballon.jpg' />
                         <div>
                             <p>{props.data.location}</p>
                             <p>Location</p>
                         </div>
                     </div>
                     <div className='pageHighlight'>
-                        <img h src='./images/timer.jpg' />
+                        <img h src='./images/people.jpg' />
                         <div>
                             <p>{props.data.totalApplicants}</p>
                             <p>Total Applicants</p>

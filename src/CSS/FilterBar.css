@@ -16,6 +16,7 @@
     align-items: center;
     padding-left: 5px;
     padding-right: 5px;
+    cursor: pointer;
 }
 
 #order div:nth-child(1) {
@@ -46,6 +47,11 @@
     background: #FFF;
 }
 
+#searchBar:focus{
+    outline: 1px solid #6938EF;
+    box-shadow: 0 0 3px 1px #6938EF;
+}
+
 #searchIcon {
     width: 70px;
     height: 44px;
@@ -55,9 +61,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 #filterCone{
     padding: 0;
     margin-top: 10px;
+    cursor: pointer;
 }

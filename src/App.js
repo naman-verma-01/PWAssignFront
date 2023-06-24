@@ -39,11 +39,26 @@ function App() {
   }, [])
 
 
-  const changePageData = (index) =>{
+  useEffect(() => {
+    let cards = document.getElementsByClassName('card')
+    let i = 0
+    for (let card of cards) {
+      // console.log("CARDS - ---->",card)
+      // if( card === pageData.index)
+      card.style.boxShadow = "none"
+    }
+    if(pageData){
+      document.getElementById(pageData._id).style.boxShadow = '0 0 5px 1px #6938EF'
+    }
+
+
+  }, [pageData])
+
+  const changePageData = (index) => {
     changePageDataHandle(index)
   }
 
-  const changePageDataHandle = (index) =>{
+  const changePageDataHandle = (index) => {
     setPageData(apiData[index])
   }
   return (
@@ -66,7 +81,7 @@ function App() {
         <div id='page'>
 
           {pageData ? <Page data={pageData} /> : null}
-      
+
         </div>
       </div>
     </div>
