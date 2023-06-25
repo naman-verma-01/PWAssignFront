@@ -3,6 +3,7 @@ import './CSS/FilterBar.css';
 import './CSS/index.css';
 import './CSS/MainCard.css';
 import './CSS/Navbar.css';
+import './CSS/Loader.css';
 import './CSS/Page.css';
 import './CSS/PopUpForm.css';
 import FilterBar from './Components/FilterBar';
@@ -78,8 +79,17 @@ function App() {
 
 
   }
+
+  setTimeout(()=>{
+    document.getElementsByClassName('loaderContainer')[0].style.display = 'none'
+  },3000)
+
+  
   return (
     <div className="App">
+      <div className='loaderContainer'>
+        <div class="loader"></div>
+      </div>
       <Navbar />
       <FilterBar changeFilterStates={changeFilterStates} />
 

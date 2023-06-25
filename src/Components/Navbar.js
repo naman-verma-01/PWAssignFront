@@ -11,7 +11,7 @@ function Navbar() {
     
   setTimeout(() => {
     setOpen(true)
-  }, 10000)
+  }, 12000)
   return (
     <div id='navbar'>
       <p style={{ fontWeight: 'bolder', fontSize: "24px", marginTop: '8px', marginLeft: '18px' }}>InternBrand</p>
