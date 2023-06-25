@@ -1,9 +1,12 @@
 #pageCom {
-    height: 100%;
+    height: 90%;
     margin: 1rem;
     border-radius: 10px;
     background: #FFF;
     padding: 20px;
+    overflow-y: scroll;
+    outline: 1px solid #6938ef35;
+
 }
 
 .pageHighlight {
@@ -81,7 +84,27 @@
     letter-spacing: 2px;
 }
 
-.content{
+.content {
     font-size: 12px;
     margin: 20px;
+}
+
+#applyNowButton {
+    border-radius: 30px;
+    background: #6938EF;
+    border: none;
+    width: 128px;
+    height: 30px;
+    margin-top: 20px !important;
+    color: #FFF;
+    font-weight: bolder;
+    
+}
+
+#applyNowSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 10px;
 }

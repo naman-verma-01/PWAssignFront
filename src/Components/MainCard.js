@@ -20,11 +20,11 @@ function MainCard(props) {
 
 
             <div className='cardSkillSection'>
-                <img src='./images/bookmarkIcon.jpg' />
+                <img src='./images/comp1.jpg' />
                 <div className='cardSkills'>
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>Python</p>
+                    <p>{props.value.requiredSkills[0]}</p>
+                    <p>{props.value.requiredSkills[1]}</p>
+                    <p>{props.value.requiredSkills[2]}</p>
                     <p>+2</p>
                 </div>
             </div>
@@ -42,7 +42,7 @@ function MainCard(props) {
                     <div className='cardHighlight'>
                         <img h src='./images/people.jpg' />
                         <div>
-                            <p>{props.value.postedOn} Applicants</p>
+                            <p>{props.value.totalApplicants} Applicants</p>
                         </div>
                     </div>
                 </div>
@@ -51,13 +51,13 @@ function MainCard(props) {
                     <div className='cardHighlight'>
                         <img h src='./images/wallet.jpg' />
                         <div>
-                            <p>${props.value.stipend}</p>
+                            <p>₹{props.value.stipend}</p>
                         </div>
                     </div>
                     <div className='cardHighlight'>
                         <img h src='./images/calendarStar.jpg' />
                         <div>
-                            <p>Ends in {props.value.postedOn}</p>
+                            <p>Ends in {props.value.postedOn.split(' ')[0]} Days</p>
                         </div>
                     </div>
                 </div>

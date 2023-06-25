@@ -4,8 +4,14 @@ function Page(props) {
     // console.log("PageDAta", props.data)
     return (
         <div id='pageCom'>
-            <p id='pagePositionName'>{props.data.position}</p>
-            <p id='pageCompName'>{props.data.companyName}</p>
+            <div style={{display:'flex'}}>
+                <img src='./images/comp1.jpg'/>
+                <div>
+                    <p id='pagePositionName'>{props.data.position}</p>
+                    <p id='pageCompName'>{props.data.companyName}</p>
+                </div>
+            </div>
+
             <div id='pageHighlightContainer'>
                 <div className='pageHighlightSection'>
                     <div className='pageHighlight'>
@@ -18,7 +24,7 @@ function Page(props) {
                     <div className='pageHighlight'>
                         <img h src='./images/calendar.jpg' />
                         <div>
-                            <p>{props.data.postedOn} Days Ago</p>
+                            <p>{props.data.postedOn.split(' ')[0]} Days Ago</p>
                             <p>Posted</p>
                         </div>
                     </div>
@@ -35,7 +41,7 @@ function Page(props) {
                     <div className='pageHighlight'>
                         <img h src='./images/calendarStar.jpg' />
                         <div>
-                            <p>{props.data.endsIn} Days</p>
+                            <p>{props.data.endsIn.split(' ')[0]} Days</p>
                             <p>Ends In</p>
                         </div>
                     </div>
@@ -45,7 +51,7 @@ function Page(props) {
                     <div className='pageHighlight'>
                         <img h src='./images/wallet.jpg' />
                         <div>
-                            <p> ${props.data.stipend}</p>
+                            <p> ₹{props.data.stipend}</p>
                             <p>Stipend</p>
                         </div>
                     </div>
@@ -94,12 +100,20 @@ function Page(props) {
 
             <div className='content'>
                 <p><b>Requirements</b></p>
-                <p>{props.data.requirements}</p>
+                <div dangerouslySetInnerHTML={{__html:props.data.requirements}}></div>
             </div>
 
             <div className='content'>
                 <p><b>Responsbilities</b></p>
-                <p>{props.data.responsibilities}</p>
+                <div dangerouslySetInnerHTML={{__html:props.data.responsibilities}}></div>
+            </div>
+
+            <div className='content'>
+                <p style={{ color: "#6938EF" }}><b>Visit Website</b></p>
+            </div>
+
+            <div id='applyNowSection'>
+                <button id='applyNowButton'>Apply Now</button>
             </div>
         </div>
     )

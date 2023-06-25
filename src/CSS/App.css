@@ -14,14 +14,19 @@ body{
 
 #displaySection{
     display: flex;
-    min-height: 33rem;
+    max-height: 36rem;
 }
 
 
 #cardSection{
-    flex: 1;
-    height: 80vh;
+    margin-top: 10px;
+    flex: 2;
+    height: 77vh;
     overflow: scroll;
+    border-radius: 10px !important;
+    /* border: 1px solid red; */
+    padding: 0 !important;
+    margin: 10px;
 }
 
 ::-webkit-scrollbar{
@@ -34,5 +39,5 @@ body{
 
 
 #page{
-    flex: 3;
+    flex: 5;
 }

@@ -1,11 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
+import PopupForm from './PopupForm'
+function FilterBar(props) {
+  const [searchValue, setSearchValue] = useState('')
+  const [location, setLocation] = useState([])
+  const [duration, setDuration] = useState()
 
-function FilterBar() {
 
-  const handleFilterOpen = () => {
-    console.log("Filters")
+
+  const search = () => {
+    props.changeFilterStates(location, duration, searchValue)
   }
 
+  const applyFilters = (newlocation, newduration) =>{
+    setLocation(newlocation)
+    setDuration(newduration)
+    props.changeFilterStates(newlocation, newduration, searchValue)
+  }
   return (
     <div id='filterBar'>
       <div id='order'>
@@ -14,10 +24,10 @@ function FilterBar() {
         <p>Bookmarks</p>
       </div>
       <div id='searchBarSection'>
-        <input id='searchBar'></input>
-        <div id='searchIcon'><img src='./images/searchIcon.png' /></div>
+        <input id='searchBar' value={searchValue} onChange={(event) => { setSearchValue(event.target.value) }}></input>
+        <div id='searchIcon' onClick={search}><img src='./images/searchIcon.png' /></div>
       </div>
-      <div id='filterCone' onClick={handleFilterOpen}><img src='./images/filterIcon.jpg' /></div>
+      <PopupForm location={location} duration={duration}  applyFilters={applyFilters}/>
     </div>
   )
 }

@@ -25,3 +25,99 @@
     padding-left: 10px;
     padding-right: 40px;
 }
+
+.modalPopup{
+    /* width: 100px !important; */
+    /* height: 140px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #6938EF;
+    font-weight: bolder;
+    
+    /* top:100px */
+    /* animation: 1s updown infinite; */
+}
+
+
+.checkOutIntern{
+    height: 40px;
+    width: 100px;
+    border: none;
+    background-color: #6938EF;
+    color: #FFF;
+    border-radius: 14px;
+    transition: all 1s;
+}
+
+
+#profilePage{
+    /* display: flex; */
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    font-weight: 400;
+    background-color: #6938EF;
+    color: #FFF;
+    border-radius: 0 0 15px 15px;
+    backdrop-filter: blur(10px);
+    /* height: 200px; */
+}
+
+
+#profileData{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /* padding-left: 50px; */
+    
+    /* width: 50%; */
+}
+
+#profileImage{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    /* width: auto; */
+}
+
+#profileImage img{
+    height: 150px;
+    border-radius: 10%;
+}
+
+.actionsIntern{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#profileData a{
+    all:unset;
+    
+}
+
+.closeIntern{
+    height: 40px;
+    width: 100px;
+    border: none;
+    background-color: #ffffff;
+    color: #6938EF;
+    border-radius: 14px;
+    transition: all 1s;
+}
+
+.closeIntern:hover{
+    background-color: #d3c3fe;
+
+}
+
+.checkOutIntern:hover{
+    background-color: #d3c3fe;
+
+}
